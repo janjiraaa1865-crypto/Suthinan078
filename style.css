@@ -1,0 +1,120 @@
+* {
+box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: system-ui, sans-serif;
+	line-height: 1.65;
+	color: #212121;        /*สีตัวอักษรที่แสดงผลในส่วนของเนื้อหาเว็บ*/
+	background: #C0E4F6;    /*สีพื้นหลังของตัวเว็บ*/
+}
+header, footer {
+	padding: 1rem;
+	color: #000000;   
+	background: #ADD495;   /*สีพื้นหลังของส่วนหัวเว็บและท้ายเว็บ*/
+}
+.site-name {
+	margin: 0 0 0.5rem;
+	font-size: 1.25rem;
+	font-weigth: bold;
+}
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav a {
+	display: block;
+	padding: 0.35rem 0.75rem;
+	color: #ffffff;   /*สีตัวอักษรบนเมนู*/
+	border-radius: 0.35rem;
+}
+nav a:hover, nav a[aria-current="page"] {
+	background: #F8E8D3;   /*พื้นหลังของเมนูเมื่อเอาเมาส์ไปวางชี้*/
+	color: #174c3c;
+}
+a:focus-visible {
+	outline: 3px solid #c67400;
+	outline-offset: 3px;
+}
+main {
+	width: min(92%, 56rem);
+	margin: 2rem auto;
+}
+.card {
+	margin: 1rem 0;
+	padding: 1rem;
+	border: 1px solid #d1e2d7;
+	border-radius: 0.75rem;
+	background: #FFF3D7;  /*สีพื้นหลังของกรอบcard*/
+}
+img {
+	display: block;
+	max-width: 100%;
+	heigth: auto;
+	border-radius: 0.5rem;
+}
+.button {
+	display: inline-block;
+	padding: 0.6rem 1rem;
+	border-radius: 0.35rem;
+	background: #FFBFC5;  /*สีของปุ่ม*/
+	color: white;
+	text-decoration: none;
+}
+ .slider-container {
+width: 100%
+max-width: 800px;
+height: 400px;
+margin: 0 auto;
+overflow: hidden;
+position: relativ;
+}
+
+
+.slider-container {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: 600%;
+  height: 100%;
+  animation: slideShow 24s infinite ease-in-out;
+}
+
+.slides img {
+  width: 16.6667% !important;
+  max-width: none !important;
+  height: 100% !important;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
+.slider-container:hover .slides {
+  animation-play-state: paused;
+}
+
+@keyframes slideShow {
+  0%, 12% { transform: translateX(0%); }
+  16.66%, 28% { transform: translateX(-16.6667%); }
+  33.33%, 45% { transform: translateX(-33.3333%); }
+  50%, 62% { transform: translateX(-50%); }
+  66.66%, 78% { transform: translateX(-66.6667%); }
+  83.33%, 95% { transform: translateX(-83.3333%); }
+  100% { transform: translateX(0%); }
+}
+
+
+
